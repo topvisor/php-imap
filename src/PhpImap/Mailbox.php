@@ -380,7 +380,7 @@ class Mailbox
      *
      * @throws InvalidParameterException
      */
-    public function setConnectionArgs(int $options = 0, int $retriesNum = 0, array ?$params = null): void
+    public function setConnectionArgs(int $options = 0, int $retriesNum = 0, ?array $params = null): void
     {
         if (0 !== $options) {
             if (($options & self::IMAP_OPTIONS_SUPPORTED_VALUES) !== $options) {
